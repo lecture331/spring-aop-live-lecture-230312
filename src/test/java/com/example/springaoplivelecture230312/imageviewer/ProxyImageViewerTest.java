@@ -8,11 +8,11 @@ public class ProxyImageViewerTest {
     public void testProxyImageViewer() {
         ImageViewer imageViewer = new ProxyImageViewer("Test.jpg");
 
-        // RealImageViewer 객체가 초기화되기 전까지 displayImage() 메소드는 호출되지 않음
+        // RealImageViewer 객체가 초기화되기 전까지 displayImage() 메서드는 호출되지 않음
         Assertions.assertDoesNotThrow(() -> imageViewer.displayImage("Test.jpg"));
         System.out.println("");
 
-        // RealImageViewer 객체가 초기화된 이후 displayImage() 메소드가 호출됨
+        // RealImageViewer 객체가 초기화된 이후 displayImage() 메서드가 호출됨
         Assertions.assertDoesNotThrow(() -> imageViewer.displayImage("Test.jpg"));
     }
 }
